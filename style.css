@@ -1,0 +1,114 @@
+#appname{
+    color:red;
+    font-size: 200%;
+
+}
+
+
+#browsedropdown{
+    position: absolute;
+    top: 8%;
+    left: 20%;
+}
+.dropdown-menu.multi-column {
+    width: 350%;
+}
+
+
+.navbar .nav > li > a:  {
+    display: block;
+    padding-top: 3px;
+    padding-left: 5px;
+    clear: both;
+    min-width: 10%;
+    line-height: 1.42857143;
+    /*color: #333;*/
+
+}
+
+.dropdown-menu.multi-column .dropdown-menu {
+    display: block ;
+    position: static ;
+    margin: 0 ;
+    border: none ;
+    box-shadow: none ;
+    font-size: x-small;
+}
+
+
+.dropdown>.dropdown-menu {
+    font-size: x-small;
+}
+
+
+#profile{
+    float:right ;
+    margin-right:-50%;
+}
+
+#bell{
+    margin-right:10%;
+}
+
+#search{
+    position:relative;
+    height:10%;
+    margin-top:2% ;
+    margin-right:-120%;
+    float:right ;
+}
+
+.glyphicon.glyphicon-search{
+    position: relative;
+    color: white;
+    margin-top: 6%;
+    margin-right: -15%;
+    float: right;
+}
+
+#bodycontent{
+    margin-top: 7%;
+}
+
+.imglist{
+    display: block;
+    float:right;
+}
+.img{
+    width: 20%;
+    height: 60%
+}
+
+.carousel{
+    width:100%;
+    height:60%;
+}
+
+/*.moviecontent{
+    text-align: center;
+}*/
+
+.moviecontentcontainer{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    background-color: cornflowerblue;
+}
+
+.moviecontent{
+    padding-left:10%;
+    padding-right:9%;
+    list-style-type: none;
+}
+li {
+    cursor: pointer;
+
+}
+
+.title{
+    text-align: center;
+}
+
+#imagecontainer{
+    display: inline-block;
+    padding : 4%;
+}

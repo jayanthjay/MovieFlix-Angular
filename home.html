@@ -1,0 +1,82 @@
+
+<h1> Trending Now</h1>
+<!--<div ng-repeat="movies in hVm.movies" id="bimage">
+    &lt;!&ndash;<pre>{{console.log(hVm.movies.Title)}}</pre>&ndash;&gt;
+
+    <img src="{{movies.Poster}}"/>
+</div>-->
+
+<!--
+<div ng-repeat="movies in hVm.movies" ng-if="$index % 4 === 0">
+
+    <div class="imglist"><img ng-src="{{movies.Poster}}" class="img"></div>
+    <div class="col col-25" ng-if="$index < images.length">
+        <img ng-src="{{images[$index].src}}" width="100%" />
+    </div>
+</div>
+-->
+
+<!--
+<div class="thumbsshell">
+    <div class="thumbswrapper">
+        <ul>
+            <li ng-repeat="movies in hVm.movies">
+                <div class="thumbwrapper">
+                    <a ng-href="" ng-click="scrollTo(image,$index)">
+                        <img class="thumbnail" ng-src="{{movies.Poster}}" />
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+-->
+
+    <div id="img-container">
+        <carousel interval="hVm.myInterval" class="carousel">
+            <slide ng-repeat="movies in groupedSlides  | filter:mVm.searchText" active="slide.active">
+                <div >
+                    <div class="posters">
+                        <a href="#/moviecontent?poster={{movies.image1.Poster}}"><img ng-src="{{movies.image1.Poster}}" class="img" /></a>
+                        <a href="#/moviecontent?poster={{movies.image2.Poster}}"><img ng-src="{{movies.image2.Poster}}" class="img" /></a>
+                        <a href="#/moviecontent?poster={{movies.image3.Poster}}"><img ng-src="{{movies.image3.Poster}}" class="img" /></a>
+                        <a href="#/moviecontent?poster={{movies.image4.Poster}}"><img ng-src="{{movies.image4.Poster}}" class="img" /></a>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+
+
+<!--
+<div id="img-container">
+    <carousel interval="myInterval">
+        <slide ng-repeat="slides in hVm.slides" active="slide.active">
+            <div >
+                <div class="posters" ng-repeat="slide in slides">
+                    <img ng-src="{{slide.Poster}}" >
+                </div>
+            </div>
+        </slide>
+    </carousel>
+</div>-->
+<!--
+
+<div id="myCarousel" class="carousel slide">
+
+    &lt;!&ndash; Carousel items &ndash;&gt;
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="row" ng-repeat="movies in hVm.movies" id="bimage">
+
+                <div class="col-sm-3" id="dispimages"><a href="#x"><img src="{{movies.Poster}}" alt="Image" class="img-responsive"></a>
+                </div>
+
+            </div>
+            &lt;!&ndash;/row&ndash;&gt;
+        </div>
+        &lt;!&ndash;/carousel-inner&ndash;&gt; <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>
+</div>-->

@@ -1,0 +1,14 @@
+<h1 class="title">{{browseVm.selected}}</h1>
+
+<div class="container">
+
+    <div ng-repeat="display in browseVm.displaySelected | filter:mVm.searchText">
+
+        <div class="">
+            <div class="col-sm-4" id="imagecontainer">
+
+               <a href="#/moviecontent?poster={{display.Poster}}"><img ng-src="{{display.Poster}}" class="img-thumbnail" /></a>
+            </div>
+        </div>
+</div>
+</div>
